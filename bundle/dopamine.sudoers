@@ -1,0 +1,4 @@
+# 도파민(메뉴바 앱)이 잠자기 설정을 암호 없이 전환하기 위한 규칙 — 정확히 이 두 명령만 허용.
+# 맨 앞의 계정 이름 자리는 install.sh가 설치하는 계정으로 채운다.
+# 제거: sudo rm /etc/sudoers.d/dopamine
+__USER__ ALL=(root) NOPASSWD: /usr/bin/pmset -a disablesleep 1, /usr/bin/pmset -a disablesleep 0
